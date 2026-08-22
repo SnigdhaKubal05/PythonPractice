@@ -18,7 +18,6 @@ else:
     print(f"{num4} is greater! ")
 
 
-"""
 #Q2. Accept the gender char and print greeting message according to gender char
 
 gender=input("Enter your gender character (M or F): ")
@@ -32,5 +31,3 @@ else:
     print("Enter gender character")
 
     
-"""
-
