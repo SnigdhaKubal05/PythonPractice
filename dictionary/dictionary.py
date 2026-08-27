@@ -20,3 +20,13 @@ print(dict)
 
 del dict[10]
 print(dict)
+
+
+#Traversing
+a={1:10,2:20,3:30,4:40}
+for i in a.values():              #values method helps to retrieve values directly not keys
+    print(i)        #keys 
+    #print(a[i])     #values
+
+
+help(dict)
