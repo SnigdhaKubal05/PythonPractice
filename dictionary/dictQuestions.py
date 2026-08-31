@@ -11,7 +11,7 @@ c={1:10,2:20,3:30}
 sum=0
 
 for i in c:
-    sum+=i
+    sum+=c[i]
 print(sum)
 
 #3. count frequency of a vlaues in a list using dictionary
