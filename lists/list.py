@@ -16,3 +16,8 @@ for i in range(len(a)):
 for i in a:
     print(i)
 
+
+
+l=[1,2,3,4,5]
+for i in range(len(l)):
+    print(i)
