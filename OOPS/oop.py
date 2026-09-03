@@ -4,12 +4,19 @@ class Factory:
     #local scope
     attribute1=12           #this is attribute - variable inside a class
 
-    def hello():            #this is method - a function inside a class
+    def hello(self):            #this is method - a function inside a class
         print("Snigdhaa")
 
     #open statement
     print("Initializing the class")
 
+"""
 print(Factory.attribute1)
 Factory.hello()
+"""
 
+# OBJECTS creation
+
+obj=Factory()
+print(obj.attribute1)
+obj.hello()
