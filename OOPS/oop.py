@@ -5,6 +5,7 @@ class Factory:
     attribute1=12           #this is attribute - variable inside a class
 
     def hello(self):            #this is method - a function inside a class
+        #self ke andar oject ki LOCATION save hoti hai
         print("Snigdhaa")
 
     #open statement
