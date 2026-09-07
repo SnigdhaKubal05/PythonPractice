@@ -5,6 +5,7 @@ class One:
     def __init__(self,age):
         self.age=age        #instance attribute
 
+    #instance method
     def show(self):         #instance method because accepting self.- because it targets object location
         print(f"SNIGDHAA {self.age}")   #we can use instance attribute like this
 
