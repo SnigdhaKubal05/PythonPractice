@@ -13,6 +13,7 @@ Reebok=Factory("leather",2)     #object 1
 
 #print(Reebok.zips)
 
+
 #print(Brand.material)
 
 Reebok.show()
