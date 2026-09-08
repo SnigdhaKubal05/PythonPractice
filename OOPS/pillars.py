@@ -37,13 +37,14 @@ class Human(Animal):    #child/sub class
 
         self.age=age
 
-        print(f"name is {name} and age is {age}")
+    def show(self):     #method overriding
+        print(f"name is {self.name} and age is {self.age}")
 
-        
+
 AnimalObj=Animal("Lion")    #instance of parent
 
 HumanObj=Human("Snigdha",20)   #instance of child
 
-"""HumanObj.show()
+HumanObj.show()
 
-AnimalObj.show()"""
+#AnimalObj.show()
