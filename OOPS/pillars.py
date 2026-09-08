@@ -1,4 +1,4 @@
-#there are 4 pillars of OOP 
+"""#there are 4 pillars of OOP 
 
 #1. Inheritance
 class Parent:
@@ -54,12 +54,45 @@ HumanObj.show()
 class Parent1:
     name1="Parent1"
 
+    def __init__(self,name):
+        pass
+
 class Parent2:
     name2="Parent2"
 
-class Child(Parent1,Parent2):
+    def __init__(self,name,age):
+        pass
+
+class Child(Parent2,Parent1):       #Method Resolution Order (MRO)
     name3="Child"
 
 object1=Child()
 
-print(object1.name2)
+print(object1.name2)"""
+
+#Multilevel Inheritence
+
+class Grandparent:
+    def __init__(self,name):
+        self.name=name
+
+class Parent(Grandparent):
+    def __init__(self,name,age):
+        super().__init__(name)
+
+        self.age=age
+
+class Child(Parent):
+    def __init__(self, name, age, degree):
+        super().__init__(name, age)
+
+        self.degree=degree
+
+    def show(self):
+        print(f"{self.name}, {self.age} and {self.degree}")
+
+object=Child("Snigdha",20,"BCA")
+
+object.show()
+
+
