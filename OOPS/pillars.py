@@ -1,4 +1,4 @@
-#there are 4 pillars of OOP 
+"""#there are 4 pillars of OOP 
 
 #1. Inheritance
 class Parent:
@@ -18,26 +18,32 @@ print(object1.attribute1)
 
 print(object2.attribute1)
 
-object2.method1()
+object2.method1()"""
 
 #all the attributes and methods can be access using object of child class as well.
 
 #Contructor Inheritence
 
-class Animal:
+class Animal:       #parent/super class
     def __init__(self, name):
         self.name=name
 
     def show(self):
         print(f"name is {self.name}")
 
-class Human(Animal):
-    pass
+class Human(Animal):    #child/sub class
+    def __init__(self, name,age):
+        super().__init__(name)      #targets constructor of Super/parent class
 
-HumanObj=Human("Snigdha")
+        self.age=age
 
-AnimalObj=Animal("Lion")
+        print(f"name is {name} and age is {age}")
 
-HumanObj.show()
+        
+AnimalObj=Animal("Lion")    #instance of parent
 
-AnimalObj.show()
+HumanObj=Human("Snigdha",20)   #instance of child
+
+"""HumanObj.show()
+
+AnimalObj.show()"""
