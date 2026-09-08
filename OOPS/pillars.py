@@ -1,4 +1,4 @@
-"""#there are 4 pillars of OOP 
+#there are 4 pillars of OOP 
 
 #1. Inheritance
 class Parent:
@@ -18,7 +18,7 @@ print(object1.attribute1)
 
 print(object2.attribute1)
 
-object2.method1()"""
+object2.method1()
 
 #all the attributes and methods can be access using object of child class as well.
 
@@ -48,3 +48,18 @@ HumanObj=Human("Snigdha",20)   #instance of child
 HumanObj.show()
 
 #AnimalObj.show()
+
+#multiple inheritence
+
+class Parent1:
+    name1="Parent1"
+
+class Parent2:
+    name2="Parent2"
+
+class Child(Parent1,Parent2):
+    name3="Child"
+
+object1=Child()
+
+print(object1.name2)
