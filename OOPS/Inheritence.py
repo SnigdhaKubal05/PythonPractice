@@ -1,4 +1,4 @@
-"""#there are 4 pillars of OOP 
+#there are 4 pillars of OOP 
 
 #1. Inheritance
 class Parent:
@@ -68,7 +68,7 @@ class Child(Parent2,Parent1):       #Method Resolution Order (MRO)
 
 object1=Child()
 
-print(object1.name2)"""
+print(object1.name2)
 
 #Multilevel Inheritence
 
