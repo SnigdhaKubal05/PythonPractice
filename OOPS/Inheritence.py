@@ -5,7 +5,7 @@ class Parent:
     attribute1="I am attribute, inside parent class"
 
     def method1(self):
-        print("Hi i am emthod, inside parent class")
+        print("Hi i am method, inside parent class")
 
 class Child(Parent):
     pass
