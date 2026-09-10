@@ -7,15 +7,38 @@
 
 #private: use "__" double underscore ----->nothing can access private attributes and methods, no object and inherited classes
 
+
 class Factory:
     __a="pune"
 
     def show(self):
         print("I am Pune class")
 
-class Bhopal(Factory):
+        print(Factory.__a)      #we can access private attributes like this but cannot change
+
+"""class Bhopal(Factory):
     def show(self):
         print(super().__a)
 
 obj=Bhopal()
-obj.show()
+obj.show()"""
+
+obj1=Factory()
+obj1.show()
+
+
+#Example 2
+class Demo:
+    def __init__(self):
+        self.name="Public"             #public
+        self._age=20                    #protected
+        self.__salary=50000             #private
+
+    def show(self):
+        print("inside the class: ")
+        print("Public: ",self.name)
+        print("Protected: ", self._age)
+        print("Private: ",self.__salary)
+
+object=Demo()
+object.show()
