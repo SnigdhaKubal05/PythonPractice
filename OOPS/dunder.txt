@@ -1,6 +1,0 @@
-dunder methods are special method starts and ends with double underscore
-
-dunder itself means double underscore
-they automatically gets called when you perform ertain action on an object
-
-eg.: __init__
