@@ -7,15 +7,15 @@ and function you are creating decorator for is passed as parameter to the decora
 
 
 def decorate(func): 
-    def wrapper():
+    def wrapper(a,b):
         print("Before function execution")
-        func()
+        func(a,b)
         print("After function execution")
     return wrapper
 
 
 @decorate
-def Hello():
-    print("Hello i am showing in function Hello()")
+def Hello(a,b):
+    print(f"Addition is {a+b}")
 
-Hello()
+Hello(5,5)
